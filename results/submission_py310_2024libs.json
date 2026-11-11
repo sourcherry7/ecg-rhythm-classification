@@ -1,0 +1,74 @@
+{
+  "submission": "submission_py310_2024libs.csv",
+  "sha256": "1eeae10455605e32b8e68ff6680273631f8cf89f0381475c19e2aac50f98d794",
+  "config_hash": "61115819aa52",
+  "preset": "submitted",
+  "overrides": [],
+  "features": "legacy_2024_py310",
+  "n_train_rows": 5116,
+  "n_features": 343,
+  "dropped_train_ids": [
+    1870
+  ],
+  "patched_test_ids": [
+    700
+  ],
+  "predicted_class_counts": {
+    "0": 2222,
+    "1": 277,
+    "2": 836,
+    "3": 76
+  },
+  "elapsed_s": 167.6,
+  "finished": "2026-11-11T11:02:48+00:00",
+  "versions": {
+    "python": "3.10.8",
+    "scikit_learn": "1.2.1",
+    "xgboost": "2.1.2",
+    "neurokit2": "0.2.10",
+    "numpy": "1.26.4"
+  },
+  "config": {
+    "preprocess": {
+      "denoise": false,
+      "wavelet": "db4",
+      "median_kernel": 301,
+      "highpass_hz": 0.5,
+      "butter_order": 4
+    },
+    "features": {
+      "sampling_rate": 250,
+      "on_error": "previous",
+      "mean_wave": true,
+      "mean_wave_sampling_rate": 250,
+      "mean_wave_window_s": 0.5,
+      "nan_column_threshold": 0.5,
+      "clip": 1000000000000000.0,
+      "clean_per_table": true,
+      "n_jobs": -1
+    },
+    "model": {
+      "kind": "xgb",
+      "params": {},
+      "random_state": null,
+      "n_jobs": -1
+    },
+    "cv": {
+      "n_splits": 5,
+      "shuffle": false,
+      "random_state": 42,
+      "scoring": "f1_micro"
+    }
+  },
+  "comparison": {
+    "reference": "results\\submission.csv",
+    "n_common_ids": 3411,
+    "agreement": 0.9332,
+    "agreement_per_reference_class": {
+      "0": 0.9599,
+      "1": 0.9309,
+      "2": 0.8738,
+      "3": 0.8116
+    }
+  }
+}
