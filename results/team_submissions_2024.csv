@@ -1,0 +1,21 @@
+n,date,fileName,description,publicScore,privateScore
+1,2024-11-12 03:48,submission.csv,,0.71867,0.74807
+2,2024-11-23 12:51,X_test_predictions.csv,feature extraction and HGBC,,
+3,2024-11-23 13:37,X_test_predictions.csv,first submission test,0.73491,0.76111
+4,2024-11-23 13:58,X_test_predictions.csv,new params,0.73317,0.76467
+5,2024-11-25 17:30,predictions.csv,,0.75928,0.75518
+6,2024-11-26 17:02,predictions.csv,,0.77552,0.79371
+7,2024-11-26 17:12,predictions.csv,,0.77146,0.78956
+8,2024-11-26 19:27,predictions.csv,,,
+9,2024-11-26 19:31,predictions.csv,,0.7964,0.7943
+10,2024-11-27 20:07,predictions.csv,,0.7964,0.7943
+11,2024-11-27 20:55,submission.csv,,0.74825,0.74925
+12,2024-11-27 21:07,submission_morefetures.csv,,0.63573,0.65145
+13,2024-11-28 20:21,predictions.csv,,0.78306,0.78719
+14,2024-11-28 20:27,predictions.csv,,0.79814,0.79964
+15,2024-11-30 13:05,predictions.csv,,0.79002,0.81031
+16,2024-11-30 13:09,submission.csv,,0.79002,0.81031
+17,2024-11-30 13:10,submission.csv,,0.7877,0.80616
+18,2024-11-30 13:20,submission.csv,,0.80278,0.81446
+19,2024-12-02 08:56,submission.csv,,0.80278,0.81446
+20,2024-12-02 08:57,predictions.csv,,0.78886,0.8032

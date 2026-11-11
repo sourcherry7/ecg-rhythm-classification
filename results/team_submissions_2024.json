@@ -1,0 +1,10 @@
+{
+  "selected": {
+    "n": 16,
+    "date": "2024-11-30 13:09",
+    "file": "submission.csv",
+    "public": "0.79002",
+    "private": "0.81031"
+  },
+  "table": "The team uploaded 20 entries (`results/team_submissions_2024.csv`). The selected one scored 0.79002 public / 0.81031 private; the best private score of all entries was 0.81446 (entry 18), the best public score 0.80278 (entry 18).\n\n| n | date (UTC) | file | public | private |\n|---|---|---|---|---|\n| 1 | 2024-11-12 03:48 | submission.csv | 0.71867 | 0.74807 |\n| 2 | 2024-11-23 12:51 | X_test_predictions.csv | nan | nan |\n| 3 | 2024-11-23 13:37 | X_test_predictions.csv | 0.73491 | 0.76111 |\n| 4 | 2024-11-23 13:58 | X_test_predictions.csv | 0.73317 | 0.76467 |\n| 5 | 2024-11-25 17:30 | predictions.csv | 0.75928 | 0.75518 |\n| 6 | 2024-11-26 17:02 | predictions.csv | 0.77552 | 0.79371 |\n| 7 | 2024-11-26 17:12 | predictions.csv | 0.77146 | 0.78956 |\n| 8 | 2024-11-26 19:27 | predictions.csv | nan | nan |\n| 9 | 2024-11-26 19:31 | predictions.csv | 0.79640 | 0.79430 |\n| 10 | 2024-11-27 20:07 | predictions.csv | 0.79640 | 0.79430 |\n| 11 | 2024-11-27 20:55 | submission.csv | 0.74825 | 0.74925 |\n| 12 | 2024-11-27 21:07 | submission_morefetures.csv | 0.63573 | 0.65145 |\n| 13 | 2024-11-28 20:21 | predictions.csv | 0.78306 | 0.78719 |\n| 14 | 2024-11-28 20:27 | predictions.csv | 0.79814 | 0.79964 |\n| 15 | 2024-11-30 13:05 | predictions.csv | 0.79002 | 0.81031 |\n| 16 | 2024-11-30 13:09 | submission.csv **(selected)** | 0.79002 | 0.81031 |\n| 17 | 2024-11-30 13:10 | submission.csv | 0.78770 | 0.80616 |\n| 18 | 2024-11-30 13:20 | submission.csv | 0.80278 | 0.81446 |\n| 19 | 2024-12-02 08:56 | submission.csv | 0.80278 | 0.81446 |\n| 20 | 2024-12-02 08:57 | predictions.csv | 0.78886 | 0.80320 |"
+}
