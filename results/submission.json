@@ -1,0 +1,74 @@
+{
+  "submission": "submission.csv",
+  "sha256": "9028914d146bcc438294224d8c21fa0e6652f3df26606bfe07862c1399147527",
+  "config_hash": "61115819aa52",
+  "preset": "submitted",
+  "overrides": [],
+  "features": "legacy_2024",
+  "n_train_rows": 5116,
+  "n_features": 343,
+  "dropped_train_ids": [
+    1870
+  ],
+  "patched_test_ids": [
+    700
+  ],
+  "predicted_class_counts": {
+    "0": 2219,
+    "1": 275,
+    "2": 848,
+    "3": 69
+  },
+  "elapsed_s": 18.0,
+  "finished": "2026-11-11T10:55:47+00:00",
+  "versions": {
+    "python": "3.10.8",
+    "scikit_learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "neurokit2": "0.3.0",
+    "numpy": "2.2.6"
+  },
+  "config": {
+    "preprocess": {
+      "denoise": false,
+      "wavelet": "db4",
+      "median_kernel": 301,
+      "highpass_hz": 0.5,
+      "butter_order": 4
+    },
+    "features": {
+      "sampling_rate": 250,
+      "on_error": "previous",
+      "mean_wave": true,
+      "mean_wave_sampling_rate": 250,
+      "mean_wave_window_s": 0.5,
+      "nan_column_threshold": 0.5,
+      "clip": 1000000000000000.0,
+      "clean_per_table": true,
+      "n_jobs": -1
+    },
+    "model": {
+      "kind": "xgb",
+      "params": {},
+      "random_state": null,
+      "n_jobs": -1
+    },
+    "cv": {
+      "n_splits": 5,
+      "shuffle": false,
+      "random_state": 42,
+      "scoring": "f1_micro"
+    }
+  },
+  "comparison": {
+    "reference": "C:\\Users\\stefa\\AppData\\Local\\Temp\\claude\\42034ba1cc1f8dd8\\9d00d806-617f-414c-8dd2-b5b6695a2182\\scratchpad\\probe_predictions.csv",
+    "n_common_ids": 3411,
+    "agreement": 0.9302,
+    "agreement_per_reference_class": {
+      "0": 0.9589,
+      "1": 0.9039,
+      "2": 0.8791,
+      "3": 0.7534
+    }
+  }
+}

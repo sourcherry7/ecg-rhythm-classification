@@ -1,0 +1,11 @@
+python 3.10.8 (Windows 10, AMD64)
+numpy 2.2.6
+pandas 2.3.3
+scipy 1.15.3
+scikit-learn 1.7.2
+xgboost 3.2.0
+lightgbm 4.7.0
+neurokit2 0.3.0
+biosppy 2.1.2
+PyWavelets 1.8.0
+cpu: Intel i7-1255U (2 P + 8 E cores, 12 threads), 16 GB RAM, no GPU
