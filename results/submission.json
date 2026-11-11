@@ -61,7 +61,7 @@
     }
   },
   "comparison": {
-    "reference": "C:\\Users\\stefa\\AppData\\Local\\Temp\\claude\\42034ba1cc1f8dd8\\9d00d806-617f-414c-8dd2-b5b6695a2182\\scratchpad\\probe_predictions.csv",
+    "reference": "the team's 2024 code on the same tables, 2024-era libraries (not in the repo)",
     "n_common_ids": 3411,
     "agreement": 0.9302,
     "agreement_per_reference_class": {

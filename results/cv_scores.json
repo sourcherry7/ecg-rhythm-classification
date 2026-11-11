@@ -168,5 +168,347 @@
     "std_f1": 0.0034520246302666285,
     "features": "legacy_2024",
     "dropped_train_ids": []
+  },
+  {
+    "name": "submitted",
+    "model_kind": "xgb",
+    "fold_scores": [
+      0.796875,
+      0.7771260997067448,
+      0.8123167155425219,
+      0.7996089931573802,
+      0.7810361681329423
+    ],
+    "per_class_f1": [
+      0.8710790464240903,
+      0.7264038231780168,
+      0.6686110098432373,
+      0.4420289855072464
+    ],
+    "confusion": [
+      [
+        2777,
+        11,
+        222,
+        20
+      ],
+      [
+        33,
+        304,
+        99,
+        7
+      ],
+      [
+        474,
+        64,
+        917,
+        18
+      ],
+      [
+        62,
+        15,
+        32,
+        61
+      ]
+    ],
+    "n_train": 5116,
+    "n_features": 347,
+    "config_hash": "61115819aa52",
+    "elapsed_s": 2109.7,
+    "config": {
+      "preprocess": {
+        "denoise": false,
+        "wavelet": "db4",
+        "median_kernel": 301,
+        "highpass_hz": 0.5,
+        "butter_order": 4
+      },
+      "features": {
+        "sampling_rate": 250,
+        "on_error": "previous",
+        "mean_wave": true,
+        "mean_wave_sampling_rate": 250,
+        "mean_wave_window_s": 0.5,
+        "nan_column_threshold": 0.5,
+        "clip": 1000000000000000.0,
+        "clean_per_table": true,
+        "n_jobs": -1
+      },
+      "model": {
+        "kind": "xgb",
+        "params": {},
+        "random_state": null,
+        "n_jobs": -1
+      },
+      "cv": {
+        "n_splits": 5,
+        "shuffle": false,
+        "random_state": 42,
+        "scoring": "f1_micro"
+      }
+    },
+    "timestamp": "2026-11-11T13:15:14+00:00",
+    "mean_f1": 0.7933925953079178,
+    "std_f1": 0.012854363017975202,
+    "features": "features_61115819aa52",
+    "dropped_train_ids": [
+      1870
+    ]
+  },
+  {
+    "name": "no_mean_wave",
+    "model_kind": "xgb",
+    "fold_scores": [
+      0.7841796875,
+      0.7802734375,
+      0.7898338220918866,
+      0.7976539589442815,
+      0.7732160312805474
+    ],
+    "per_class_f1": [
+      0.8649152805844862,
+      0.7048780487804878,
+      0.6528189910979229,
+      0.4631578947368421
+    ],
+    "confusion": [
+      [
+        2782,
+        16,
+        211,
+        21
+      ],
+      [
+        46,
+        289,
+        101,
+        7
+      ],
+      [
+        513,
+        60,
+        880,
+        21
+      ],
+      [
+        62,
+        12,
+        30,
+        66
+      ]
+    ],
+    "n_train": 5117,
+    "n_features": 97,
+    "config_hash": "1fcfd390e100",
+    "elapsed_s": 22.2,
+    "config": {
+      "preprocess": {
+        "denoise": false,
+        "wavelet": "db4",
+        "median_kernel": 301,
+        "highpass_hz": 0.5,
+        "butter_order": 4
+      },
+      "features": {
+        "sampling_rate": 250,
+        "on_error": "previous",
+        "mean_wave": false,
+        "mean_wave_sampling_rate": 250,
+        "mean_wave_window_s": 0.5,
+        "nan_column_threshold": 0.5,
+        "clip": 1000000000000000.0,
+        "clean_per_table": true,
+        "n_jobs": -1
+      },
+      "model": {
+        "kind": "xgb",
+        "params": {},
+        "random_state": null,
+        "n_jobs": -1
+      },
+      "cv": {
+        "n_splits": 5,
+        "shuffle": false,
+        "random_state": 42,
+        "scoring": "f1_micro"
+      }
+    },
+    "timestamp": "2026-11-11T13:15:37+00:00",
+    "mean_f1": 0.7850313874633432,
+    "std_f1": 0.008310942323953362,
+    "features": "features_61115819aa52",
+    "dropped_train_ids": []
+  },
+  {
+    "name": "lgbm",
+    "model_kind": "lgbm",
+    "fold_scores": [
+      0.8017578125,
+      0.7702834799608993,
+      0.7996089931573802,
+      0.7956989247311828,
+      0.7781036168132942
+    ],
+    "per_class_f1": [
+      0.8673612190950085,
+      0.7114914425427873,
+      0.6632653061224489,
+      0.39330543933054396
+    ],
+    "confusion": [
+      [
+        2789,
+        11,
+        217,
+        13
+      ],
+      [
+        38,
+        291,
+        111,
+        3
+      ],
+      [
+        502,
+        55,
+        910,
+        6
+      ],
+      [
+        72,
+        18,
+        33,
+        47
+      ]
+    ],
+    "n_train": 5116,
+    "n_features": 343,
+    "config_hash": "cbfeca6097f2",
+    "elapsed_s": 42.8,
+    "config": {
+      "preprocess": {
+        "denoise": false,
+        "wavelet": "db4",
+        "median_kernel": 301,
+        "highpass_hz": 0.5,
+        "butter_order": 4
+      },
+      "features": {
+        "sampling_rate": 250,
+        "on_error": "previous",
+        "mean_wave": true,
+        "mean_wave_sampling_rate": 250,
+        "mean_wave_window_s": 0.5,
+        "nan_column_threshold": 0.5,
+        "clip": 1000000000000000.0,
+        "clean_per_table": true,
+        "n_jobs": -1
+      },
+      "model": {
+        "kind": "lgbm",
+        "params": {},
+        "random_state": null,
+        "n_jobs": -1
+      },
+      "cv": {
+        "n_splits": 5,
+        "shuffle": false,
+        "random_state": 42,
+        "scoring": "f1_micro"
+      }
+    },
+    "timestamp": "2026-11-11T13:16:25+00:00",
+    "mean_f1": 0.7890905654325513,
+    "std_f1": 0.012563330661813093,
+    "features": "legacy_2024",
+    "dropped_train_ids": [
+      1870
+    ]
+  },
+  {
+    "name": "corrected_rate",
+    "model_kind": "xgb",
+    "fold_scores": [
+      0.798828125,
+      0.7986314760508308,
+      0.7996089931573802,
+      0.8035190615835777,
+      0.7908113391984359
+    ],
+    "per_class_f1": [
+      0.8713927227101631,
+      0.7529691211401425,
+      0.672281215671915,
+      0.5017667844522968
+    ],
+    "confusion": [
+      [
+        2778,
+        11,
+        223,
+        18
+      ],
+      [
+        26,
+        317,
+        91,
+        9
+      ],
+      [
+        483,
+        57,
+        918,
+        15
+      ],
+      [
+        59,
+        14,
+        26,
+        71
+      ]
+    ],
+    "n_train": 5116,
+    "n_features": 397,
+    "config_hash": "71d709bcb93c",
+    "elapsed_s": 96.4,
+    "config": {
+      "preprocess": {
+        "denoise": false,
+        "wavelet": "db4",
+        "median_kernel": 301,
+        "highpass_hz": 0.5,
+        "butter_order": 4
+      },
+      "features": {
+        "sampling_rate": 300,
+        "on_error": "previous",
+        "mean_wave": true,
+        "mean_wave_sampling_rate": 300,
+        "mean_wave_window_s": 0.5,
+        "nan_column_threshold": 0.5,
+        "clip": 1000000000000000.0,
+        "clean_per_table": true,
+        "n_jobs": -1
+      },
+      "model": {
+        "kind": "xgb",
+        "params": {},
+        "random_state": null,
+        "n_jobs": -1
+      },
+      "cv": {
+        "n_splits": 5,
+        "shuffle": false,
+        "random_state": 42,
+        "scoring": "f1_micro"
+      }
+    },
+    "timestamp": "2026-11-11T13:20:10+00:00",
+    "mean_f1": 0.7982797989980449,
+    "std_f1": 0.004133251976002093,
+    "features": "features_71d709bcb93c",
+    "dropped_train_ids": [
+      1870
+    ]
   }
 ]

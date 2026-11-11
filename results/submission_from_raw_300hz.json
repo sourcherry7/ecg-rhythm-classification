@@ -1,0 +1,75 @@
+{
+  "submission": "submission_from_raw_300hz.csv",
+  "sha256": "aaa9875749b173e64bd9c44b962cdbfd58b6f26d3de66488c5442454acc29382",
+  "config_hash": "71d709bcb93c",
+  "preset": "corrected_rate",
+  "overrides": [],
+  "features": "features_71d709bcb93c",
+  "n_train_rows": 5116,
+  "n_features": 397,
+  "dropped_train_ids": [
+    1870
+  ],
+  "patched_test_ids": [
+    83,
+    700
+  ],
+  "predicted_class_counts": {
+    "0": 2189,
+    "1": 273,
+    "2": 860,
+    "3": 89
+  },
+  "elapsed_s": 23.3,
+  "finished": "2026-11-11T13:20:39+00:00",
+  "versions": {
+    "python": "3.10.8",
+    "scikit_learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "neurokit2": "0.3.0",
+    "numpy": "2.2.6"
+  },
+  "config": {
+    "preprocess": {
+      "denoise": false,
+      "wavelet": "db4",
+      "median_kernel": 301,
+      "highpass_hz": 0.5,
+      "butter_order": 4
+    },
+    "features": {
+      "sampling_rate": 300,
+      "on_error": "previous",
+      "mean_wave": true,
+      "mean_wave_sampling_rate": 300,
+      "mean_wave_window_s": 0.5,
+      "nan_column_threshold": 0.5,
+      "clip": 1000000000000000.0,
+      "clean_per_table": true,
+      "n_jobs": -1
+    },
+    "model": {
+      "kind": "xgb",
+      "params": {},
+      "random_state": null,
+      "n_jobs": -1
+    },
+    "cv": {
+      "n_splits": 5,
+      "shuffle": false,
+      "random_state": 42,
+      "scoring": "f1_micro"
+    }
+  },
+  "comparison": {
+    "reference": "results\\submission.csv",
+    "n_common_ids": 3411,
+    "agreement": 0.8748,
+    "agreement_per_reference_class": {
+      "0": 0.9148,
+      "1": 0.8691,
+      "2": 0.7866,
+      "3": 0.6957
+    }
+  }
+}

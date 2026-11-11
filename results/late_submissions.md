@@ -6,3 +6,5 @@ Post-competition uploads used to verify the reproduction. They do not affect the
 |---|---|---|---|---|---|
 | 2026-11-11T11:13+00:00 | submission.csv | 9028914d146b | Late submission A (2026-11-11): port of the selected pipeline on the team's 2024 feature tables, current libraries (xgboost 3.2.0, NeuroKit2 0.3.0), config 61115819aa52 | 0.79350 | 0.80497 |
 | 2026-11-11T11:14+00:00 | submission_py310_2024libs.csv | 1eeae1045560 | Late submission B (2026-11-11): same port and 2024 tables, fitted with the 2024-era libraries (xgboost 2.1.2, NeuroKit2 0.2.10, scikit-learn 1.2.1), config 61115819aa52 | 0.79640 | 0.79430 |
+| 2026-11-11T13:19+00:00 | submission_from_raw_250hz.csv | 3cb4f3843306 | Late submission C: features re-extracted from the raw recordings at the 250 Hz setting (NeuroKit2 0.3.0), submitted preset, current libraries | 0.79756 | 0.80082 |
+| 2026-11-11T13:21+00:00 | submission_from_raw_300hz.csv | aaa9875749b1 | Late submission D: features re-extracted from the raw recordings at the true 300 Hz (corrected_rate preset, NeuroKit2 0.3.0), current libraries | 0.80278 | 0.80972 |

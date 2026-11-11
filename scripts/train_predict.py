@@ -95,7 +95,8 @@ def main() -> int:
         metadata["comparison"] = compare(result.predictions, args.compare_to)
         print("comparison:", json.dumps(metadata["comparison"], indent=2))
     args.out.with_suffix(".json").write_text(json.dumps(metadata, indent=2), encoding="utf-8", newline="\n")
-    print(f"wrote {path} ({len(result.predictions)} rows, classes {dict(counts)}, {result.elapsed_s:.0f} s)")
+    class_counts = {int(k): int(v) for k, v in counts.items()}
+    print(f"wrote {path} ({len(result.predictions)} rows, classes {class_counts}, {result.elapsed_s:.0f} s)")
     return 0
 
 
