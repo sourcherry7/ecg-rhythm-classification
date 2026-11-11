@@ -1,0 +1,31 @@
+# Competition data is private ("subject to competition rules") and is never committed.
+data/*
+!data/README.md
+*.csv
+!results/**/*.csv
+*.zip
+*.pkl
+*.npy
+*.parquet
+
+# Kaggle API token (repo-local, see README)
+.kaggle/*
+!.kaggle/README.txt
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.npz
